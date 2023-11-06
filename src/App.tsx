@@ -8,8 +8,6 @@ const App = () => {
   const { data: repos, isLoading, error } = useGetRepos()
   const { starredRepos, starRepo } = useLocalStorage()
 
-  console.log('JSON.stringify(repos) :>> ', JSON.stringify(repos))
-
   const rows = getRowsWithStars(starredRepos, repos)
 
   return (

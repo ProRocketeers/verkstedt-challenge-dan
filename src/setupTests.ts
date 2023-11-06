@@ -5,7 +5,6 @@ import { rowsTestData } from './utils/__tests__/rows.testData'
 
 export const restHandlers = [
   http.get('https://api.github.com/search/repositories', () => {
-    console.log('boo')
     return HttpResponse.json(rowsTestData.data, { status: 200 })
   }),
 ]
